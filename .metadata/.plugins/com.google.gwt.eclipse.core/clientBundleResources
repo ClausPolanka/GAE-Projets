@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+<deps cu="=ConnectrStage1_alt/src&lt;com.metadot.book.connectr.client.Resources{GlobalResources.java">
+<res path="com/metadot/book/connectr/client/resources/logo_small.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/propertybutton.png"/>
+<res path="com/metadot/book/connectr/client/resources/logo.png"/>
+<res path="com/metadot/book/connectr/client/resources/globalstyles.css"/>
+<res path="com/metadot/book/connectr/client/resources/propertybutton.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/logo_small.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/logo.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/globalstyles.css"/>
+</deps>
+<deps cu="=ConnectrStage1/src&lt;com.metadot.book.connectr.client.Resources{GlobalResources.java">
+<res path="com/metadot/book/connectr/client/resources/logo_small.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/propertybutton.png"/>
+<res path="com/metadot/book/connectr/client/resources/logo.png"/>
+<res path="com/metadot/book/connectr/client/resources/globalstyles.css"/>
+<res path="com/metadot/book/connectr/client/resources/propertybutton.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/logo_small.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/logo.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/globalstyles.css"/>
+</deps>
+<deps cu="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.resources{GlobalResources.java">
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/propertybutton.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/facebooklogo.jpeg"/>
+<res path="com/metadot/book/connectr/client/resources/googlelogo.gif"/>
+<res path="com/metadot/book/connectr/client/resources/globalstyles.css"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/logo_small.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/googlelogo.gif"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/logo.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/globalstyles.css"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/twitterlogo.gif"/>
+<res path="com/metadot/book/connectr/client/resources/logo_small.png"/>
+<res path="com/metadot/book/connectr/client/resources/twitterlogo.gif"/>
+<res path="com/metadot/book/connectr/client/resources/facebooklogo.jpeg"/>
+<res path="com/metadot/book/connectr/client/resources/logo.png"/>
+<res path="com/metadot/book/connectr/client/resources/propertybutton.png"/>
+</deps>
+<deps cu="=connectr/src&lt;com.metadot.book.connectr.client.resources{GlobalResources.java">
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/propertybutton.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/facebooklogo.jpeg"/>
+<res path="com/metadot/book/connectr/client/resources/googlelogo.gif"/>
+<res path="com/metadot/book/connectr/client/resources/globalstyles.css"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/logo_small.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/googlelogo.gif"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/logo.png"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/globalstyles.css"/>
+<res path="com/metadot/book/connectr/client/resources/com/metadot/book/connectr/client/resources/twitterlogo.gif"/>
+<res path="com/metadot/book/connectr/client/resources/logo_small.png"/>
+<res path="com/metadot/book/connectr/client/resources/twitterlogo.gif"/>
+<res path="com/metadot/book/connectr/client/resources/facebooklogo.jpeg"/>
+<res path="com/metadot/book/connectr/client/resources/logo.png"/>
+<res path="com/metadot/book/connectr/client/resources/propertybutton.png"/>
+</deps>
+<deps cu="=MyConnectr/src&lt;sageniuz.client.Resources{GlobalResources.java">
+<res path="sageniuz/client/resources/sageniuz/client/resources/globalstyles.css"/>
+<res path="sageniuz/client/resources/logo_small.png"/>
+<res path="sageniuz/client/resources/logo.png"/>
+<res path="sageniuz/client/resources/sageniuz/client/resources/logo_small.png"/>
+<res path="sageniuz/client/resources/propertybutton.png"/>
+<res path="sageniuz/client/resources/globalstyles.css"/>
+<res path="sageniuz/client/resources/sageniuz/client/resources/logo.png"/>
+<res path="sageniuz/client/resources/sageniuz/client/resources/propertybutton.png"/>
+</deps>
+</index>

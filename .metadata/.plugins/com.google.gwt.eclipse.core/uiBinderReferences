@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uiBinderReferences>
+<referenceManager>
+<references>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/logo_small.png"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendPopup.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/UserBadgeView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/UserBadgeView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageItemView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.view.FriendEditView$FriendEditUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client"/>
+</targetLocation>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/ConnectrApp.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/LoginView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/LoginView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendPopup.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendPopup.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendList.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client"/>
+</targetLocation>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/FriendList.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/FriendList.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendPopup.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/HeaderPanel.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendList.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.view.FriendListView$FriendListUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.view.CountdownView$UserBadgeUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/CountdownView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/logo_small.png"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.view.MessageItemView$MessageItemUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageItemView.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.view.LoginView$UserBadgeUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/LoginView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client.view"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendPopup.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendList.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendList.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendList.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageItemView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageItemView.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/Resources/logo_small.png"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/logo_small.png"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.MainPanel$MainPanelUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client.view"/>
+</targetLocation>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="sageniuz.client"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/CountdownView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/CountdownView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="sageniuz.client.ConnectrApp$ConnectrAppUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/ConnectrApp.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageItem.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageItem.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageListView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/LoginView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/logo.png"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendPopup.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendPopup.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/CountdownView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client.view"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageItemView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.view.UserBadgeView$UserBadgeUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/UserBadgeView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/LoginView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/googlelogo.gif"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageItemView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageItemView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client"/>
+</targetLocation>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="sageniuz.client.FriendList$FriendListUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/FriendList.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.FriendList$FriendPopup$Binder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendPopup.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/HeaderPanel.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.MessageItem$MessageItemUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageItem.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.HeaderPanel$HeaderPanelUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.MessageListView$MessageListViewUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageListView.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/LoginView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageItem.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendList.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageListView.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/FriendList.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageItem.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageItem.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.FriendList$FriendListUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendList.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendList.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendList.ui.xml"/>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="sageniuz.client.HeaderPanel$HeaderPanelUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/HeaderPanel.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.ConnectrApp$ConnectrAppUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+</reference>
+<reference sourceProject="MyConnectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/FriendList.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="sageniuz/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageListView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.FriendEdit$FriendEditUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendEdit.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.view.MessageListView$MessageListViewUiBinder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalType" fullyQualifiedName="com.metadot.book.connectr.client.view.FriendPopupView$Binder"/>
+</sourceLocation>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/FriendPopup.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/Resources/GlobalStyles.css"/>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/logo_small.png"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/UserBadgeView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage2">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/LoginView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/facebooklogo.jpeg"/>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/LoginView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/resources/twitterlogo.gif"/>
+</reference>
+<reference sourceProject="ConnectrStage1_alt">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageItem.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.google.gwt.user.client.ui"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageListView.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MessageListView.ui.xml"/>
+</reference>
+<reference sourceProject="connectr">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<targetLocation class="LogicalJavaElementReferenceLocation">
+<logicalJavaElement class="LogicalPackage" packageName="com.metadot.book.connectr.client.view"/>
+</targetLocation>
+</reference>
+<reference sourceProject="ConnectrStage1">
+<sourceLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<targetLocation class="ClasspathRelativeFileReferenceLocation" classpathRelativePath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+</reference>
+</references>
+</referenceManager>
+<uiBinderSubtypeToOwner>
+<entry owner="com.metadot.book.connectr.client.ConnectrApp" uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client{ConnectrApp.java[ConnectrApp[ConnectrAppUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.CountdownView" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{CountdownView.java[CountdownView[UserBadgeUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.MainPanel" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client{MainPanel.java[MainPanel[MainPanelUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.HeaderPanel" uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client{HeaderPanel.java[HeaderPanel[HeaderPanelUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.HeaderPanel" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client{HeaderPanel.java[HeaderPanel[HeaderPanelUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.FriendListView" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{FriendListView.java[FriendListView[FriendListUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.MessageListView" uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{MessageListView.java[MessageListView[MessageListViewUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.LoginView" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{LoginView.java[LoginView[UserBadgeUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.MessageListView" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{MessageListView.java[MessageListView[MessageListViewUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.MessageItemView" uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{MessageItemView.java[MessageItemView[MessageItemUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.FriendEditView" uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{FriendEditView.java[FriendEditView[FriendEditUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.FriendEditView" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{FriendEditView.java[FriendEditView[FriendEditUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.FriendPopupView" uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{FriendPopupView.java[FriendPopupView[Binder"/>
+<entry owner="com.metadot.book.connectr.client.view.FriendListView" uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{FriendListView.java[FriendListView[FriendListUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.MainPanel" uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client{MainPanel.java[MainPanel[MainPanelUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.FriendPopupView" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{FriendPopupView.java[FriendPopupView[Binder"/>
+<entry owner="com.metadot.book.connectr.client.view.UserBadgeView" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{UserBadgeView.java[UserBadgeView[UserBadgeUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.ConnectrApp" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client{ConnectrApp.java[ConnectrApp[ConnectrAppUiBinder"/>
+<entry owner="com.metadot.book.connectr.client.view.MessageItemView" uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{MessageItemView.java[MessageItemView[MessageItemUiBinder"/>
+</uiBinderSubtypeToOwner>
+<uiBinderSubtypeToUiXml>
+<entry uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client{MainPanel.java[MainPanel[MainPanelUiBinder" uiXmlPath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client{MainPanel.java[MainPanel[MainPanelUiBinder" uiXmlPath="com/metadot/book/connectr/client/MainPanel.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client{HeaderPanel.java[HeaderPanel[HeaderPanelUiBinder" uiXmlPath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<entry uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client{HeaderPanel.java[HeaderPanel[HeaderPanelUiBinder" uiXmlPath="com/metadot/book/connectr/client/HeaderPanel.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{FriendListView.java[FriendListView[FriendListUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+<entry uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{FriendListView.java[FriendListView[FriendListUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/FriendListView.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{MessageListView.java[MessageListView[MessageListViewUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<entry uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{MessageListView.java[MessageListView[MessageListViewUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/MessageListView.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{UserBadgeView.java[UserBadgeView[UserBadgeUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/UserBadgeView.ui.xml"/>
+<entry uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client{ConnectrApp.java[ConnectrApp[ConnectrAppUiBinder" uiXmlPath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client{ConnectrApp.java[ConnectrApp[ConnectrAppUiBinder" uiXmlPath="com/metadot/book/connectr/client/ConnectrApp.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{LoginView.java[LoginView[UserBadgeUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/LoginView.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{MessageItemView.java[MessageItemView[MessageItemUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/MessageItemView.ui.xml"/>
+<entry uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{MessageItemView.java[MessageItemView[MessageItemUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/MessageItemView.ui.xml"/>
+<entry uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{FriendEditView.java[FriendEditView[FriendEditUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{FriendEditView.java[FriendEditView[FriendEditUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/FriendEditView.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{CountdownView.java[CountdownView[UserBadgeUiBinder" uiXmlPath="com/metadot/book/connectr/client/view/CountdownView.ui.xml"/>
+<entry uiBinder="=connectr/src&lt;com.metadot.book.connectr.client.view{FriendPopupView.java[FriendPopupView[Binder" uiXmlPath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+<entry uiBinder="=ConnectrStage2/src&lt;com.metadot.book.connectr.client.view{FriendPopupView.java[FriendPopupView[Binder" uiXmlPath="com/metadot/book/connectr/client/view/FriendPopupView.ui.xml"/>
+</uiBinderSubtypeToUiXml>
+<uiXmlReferencedFields>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="style"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="friendNameLabel"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="edit"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="delete"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="nameDiv"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/MainPanel.ui.xml" name="style"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/MainPanel.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="mainPanel"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="headerPanel"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="friendList"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="cancelButton"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="firstNameField"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="emailField"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="saveButton"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="lastNameField"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/MainPanel.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/MainPanel.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendPopup.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendPopup.ui.xml" name="edit"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendPopup.ui.xml" name="delete"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendPopup.ui.xml" name="nameDiv"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendList.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendList.ui.xml" name="addNew"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendList.ui.xml" name="friendsTable"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/MessageItemView.ui.xml" name="author"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/MessageItemView.ui.xml" name="title"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/MessageItemView.ui.xml" name="style"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/MessageItemView.ui.xml" name="description"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/MessageItemView.ui.xml" name="date"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/MessageItem.ui.xml" name="title"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/MessageItem.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/MessageItem.ui.xml" name="description"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/MessageItem.ui.xml" name="date"/>
+<uiField location="/Login/src/login/client/LoginUI.ui.xml" name="style"/>
+<uiField location="/Login/src/login/client/LoginUI.ui.xml" name="button"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/MessageItemView.ui.xml" name="title"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/MessageItemView.ui.xml" name="style"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/MessageItemView.ui.xml" name="description"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/MessageItemView.ui.xml" name="date"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendPopup.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendPopup.ui.xml" name="edit"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendPopup.ui.xml" name="delete"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendPopup.ui.xml" name="nameDiv"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendListView.ui.xml" name="style"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendListView.ui.xml" name="loadingLabel"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendListView.ui.xml" name="addNew"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendListView.ui.xml" name="friendsTable"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="logo"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="cancelButton"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="firstNameField"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="emailField"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="saveButton"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/FriendEdit.ui.xml" name="lastNameField"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="signOutLink"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="logo"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/MessageItem.ui.xml" name="title"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/MessageItem.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/MessageItem.ui.xml" name="description"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/MessageItem.ui.xml" name="date"/>
+<uiField location="/MyConnectr/src/sageniuz/client/ConnectrApp.ui.xml" name="style"/>
+<uiField location="/MyConnectr/src/sageniuz/client/ConnectrApp.ui.xml" name="mainPanel"/>
+<uiField location="/MyConnectr/src/sageniuz/client/ConnectrApp.ui.xml" name="headerPanel"/>
+<uiField location="/MyConnectr/src/sageniuz/client/ConnectrApp.ui.xml" name="friendList"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/MessageListView.ui.xml" name="style"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/MessageListView.ui.xml" name="messagesPanel"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="style"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="friendNameLabel"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="edit"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="delete"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendPopupView.ui.xml" name="nameDiv"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="style"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="urlTable"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="loadingLabel"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="cancelButton"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="firstNameField"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="addUrl"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="emailField"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="saveButton"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="url"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="lastNameField"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/CountdownView.ui.xml" name="countdownLabel"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/MessageListView.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/MessageListView.ui.xml" name="messagesPanel"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/UserBadgeView.ui.xml" name="logoutLink"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/UserBadgeView.ui.xml" name="style"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/UserBadgeView.ui.xml" name="usernameLabel"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="friendListPanel"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="style"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="mainPanel"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="headerPanel"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="mainPanel"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="headerPanel"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="friendList"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="friendListPanel"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="style"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="mainPanel"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/ConnectrApp.ui.xml" name="headerPanel"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendList.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendList.ui.xml" name="addNew"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/FriendList.ui.xml" name="friendsTable"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="logo"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="style"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="userBadgePanel"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendListView.ui.xml" name="style"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendListView.ui.xml" name="loadingLabel"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendListView.ui.xml" name="addNew"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendListView.ui.xml" name="friendsTable"/>
+<uiField location="/MyConnectr/src/sageniuz/client/FriendList.ui.xml" name="style"/>
+<uiField location="/MyConnectr/src/sageniuz/client/FriendList.ui.xml" name="addNew"/>
+<uiField location="/MyConnectr/src/sageniuz/client/FriendList.ui.xml" name="friendsTable"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/MessageListView.ui.xml" name="style"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/MessageListView.ui.xml" name="messagesPanel"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/MessageListView.ui.xml" name="refreshButton"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/LoginView.ui.xml" name="logo"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/LoginView.ui.xml" name="twitter"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/LoginView.ui.xml" name="google"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/LoginView.ui.xml" name="style"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/LoginView.ui.xml" name="googleButton"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/LoginView.ui.xml" name="facebook"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/LoginView.ui.xml" name="facebookButton"/>
+<uiField location="/connectr/src/com/metadot/book/connectr/client/view/LoginView.ui.xml" name="twitterButton"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="signOutLink"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="logo"/>
+<uiField location="/ConnectrStage1/src/com/metadot/book/connectr/client/HeaderPanel.ui.xml" name="style"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="style"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="urlTable"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="cancelButton"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="loadingLabel"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="firstNameField"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="emailField"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="addUrl"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="saveButton"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="url"/>
+<uiField location="/ConnectrStage2/src/com/metadot/book/connectr/client/view/FriendEditView.ui.xml" name="lastNameField"/>
+<uiField location="/MyConnectr/src/sageniuz/client/HeaderPanel.ui.xml" name="signOutLink"/>
+<uiField location="/MyConnectr/src/sageniuz/client/HeaderPanel.ui.xml" name="logo"/>
+<uiField location="/MyConnectr/src/sageniuz/client/HeaderPanel.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/MessageListView.ui.xml" name="style"/>
+<uiField location="/ConnectrStage1_alt/src/com/metadot/book/connectr/client/MessageListView.ui.xml" name="messagesPanel"/>
+</uiXmlReferencedFields>
+</uiBinderReferences>

@@ -1,0 +1,19 @@
+
+This is an Eclipse project bundle for a Google App Engine and Google Web Toolkit (GAE/Java+GWT) application.
+This app is 'ConnectrStage1_alt'.
+
+This and the other applications in the download bundle accompany the book:
+ "Google App Engine Java and GWT Application Development" : 
+https://www.packtpub.com/google-app-engine-java-and-gwt-application-development/book ,
+by Daniel Guermeur and Amy Unruh
+
+ConnectrStage1_alt is a first stage of the Connectr app that is developed throughout the book. ConnectrStage1_alt accompanies Chapter 4.
+
+Get started by reading the README file in the top-level directory of the code bundle you downloaded from Packt. It provides information about the apps, the software used, and the book and associated blog.
+
+BLOG AND CONTACT INFORMATION 
+----------------------------
+
+The authors have a blog associated with this book : http://theconnectr.blogspot.com/ .
+Code updates and errata will be available from this blog, as well as through the Packt site from which you obtained this download. 
+The authors' contact information can be found on the blog as well.

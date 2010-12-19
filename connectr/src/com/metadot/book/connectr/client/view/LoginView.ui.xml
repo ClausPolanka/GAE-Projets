@@ -1,0 +1,132 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:image field='logo' src='../resources/logo.png' />
+	<ui:image field='twitter' src='../resources/twitterlogo.gif' />
+	<ui:image field='google' src='../resources/googlelogo.gif' />
+	<ui:image field='facebook' src='../resources/facebooklogo.jpeg' />
+
+	<ui:style>
+		.outer {
+			padding: 100px 0;
+			width: 100%;
+		}
+		
+		.container {
+			width: 100%;
+		}
+		
+		.content {
+      width: 80%;
+      padding: 40px;
+      text-align: left;
+      background-color: #e8effa;
+      border: 3px solid #ccc;
+    }
+    
+    .about {
+      width: 80%;
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: left;
+      backxground-color: #e8effa;
+    }
+    
+		@sprite .logo {
+			gwt-image: 'logo';
+			position: absolute;
+			clear: both;
+		}
+		
+		.what-to-do {
+			margin-top: 80px;
+			font-size: 1.8em;
+		}
+		
+		.providers {
+			margin: 50px 20px;
+		}
+		
+		.provider-button {
+			float: left;
+			padding: 0 20px;
+		}
+		
+		.sidebox {
+			float: right;
+			background-color: #444;
+			font-size: 1.3em;
+			color: #eee;
+			width: 222px;
+			margin-left: 20px;
+			padding: 20px;
+		}
+		
+		.pushbutton {
+			
+		}
+		
+		.description {
+			padding: 20px 0
+		}
+		
+		.clear {
+			clear: both;
+		}
+	</ui:style>
+
+	<g:HTMLPanel styleName='{style.outer}'>
+		<center>
+			<div class='{style.container}'>
+				<div class='{style.content}'>
+					<div class='{style.logo}' />
+					<div class='{style.sidebox}'>
+						Connectr is built with Google Web Toolkit and App
+						Engine
+						in Java. 
+		    </div>
+					<div class='{style.what-to-do}'>To use Connectr, login with one of the following
+						providers.</div>
+					<div class='{style.providers}'>
+						<div class='{style.provider-button}'>
+							<g:PushButton ui:field='twitterButton' width='120px'
+								height='40px'>
+								<g:upFace image='{twitter}' />
+							</g:PushButton>
+						</div>
+						<div class='{style.provider-button}'>
+							<g:PushButton ui:field='googleButton' width='120px'
+								height='40px'>
+								<g:upFace image='{google}' />
+							</g:PushButton>
+						</div>
+						<div class='{style.provider-button}'>
+							<g:PushButton ui:field='facebookButton' width='120px'
+								height='40px'>
+								<g:upFace image='{facebook}' />
+							</g:PushButton>
+						</div>
+					</div>
+					<div>
+						<div class='{style.clear} {style.description}'>
+							<p><em>Connectr</em> tracks what people are publishing on the web. You can
+								watch your friends' blog updates, tweets, and more. Add RSS feeds
+								and <em>Connectr</em> will aggregate them for you.
+				    </p>
+						</div>
+					</div>
+				</div>
+				<div class='{style.about}'>
+					<p>
+						<em>Connectr</em> is a demo of an example <a href="http://code.google.com/webtoolkit/" title="Google Web Toolkit - Google Code">GWT (Google Web Toolkit)</a> and <a href="http://code.google.com/appengine/" title="Google App Engine - Google Code">Google App Engine</a>/Java app.  Its source code is available with the following book:
+						<a
+							href="https://www.packtpub.com/google-app-engine-java-and-gwt-application-development/book"><em>Google App Engine Java and GWT Application Development</em></a>. <br/>Authors: Amy Unruh and <a href="http://twitter.com/supercobra">Daniel Guermeur</a>.
+					</p>
+					<p>More information about the book and related topics can be found on <a href="http://theconnectr.blogspot.com/" title="The Connector">this blog</a>.</p>
+					<p>Feel free to play with <em>Connectr</em>. However, it is an experimental app, so use at your own risk.</p>
+				</div>
+			</div>
+		</center>
+	</g:HTMLPanel>
+</ui:UiBinder> 
+

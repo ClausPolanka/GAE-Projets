@@ -1,0 +1,52 @@
+package sageniuz.client;
+
+import sageniuz.shared.UserAccountDTO;
+
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.DockLayoutPanel;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
+
+public class ConnectrApp implements EntryPoint {
+
+	interface ConnectrAppUiBinder extends UiBinder<DockLayoutPanel, ConnectrApp> {
+	}
+
+	private static final ConnectrAppUiBinder binder = GWT.create(ConnectrAppUiBinder.class);
+
+	@UiField
+	protected HeaderPanel headerPanel;
+	@UiField
+	protected FriendList friendList;
+
+	private UserAccountDTO currentUser;
+
+	@Override
+	public void onModuleLoad() {
+		DockLayoutPanel outer = binder.createAndBindUi(this);
+		RootLayoutPanel root = RootLayoutPanel.get();
+		root.add(outer);
+		login();
+	}
+
+	private void login() {
+		UserAccountServiceAsync userService = GWT.create(UserAccountService.class);
+		userService.login("email", "password", new AsyncCallback<UserAccountDTO>() {
+			@Override
+			public void onFailure(Throwable caught) {
+				Window.alert("An error occurred");
+			}
+
+			@Override
+			public void onSuccess(UserAccountDTO result) {
+				currentUser = result;
+				System.out.println(currentUser.getName() + " " + currentUser.getEmailAddress());
+				// displayUserFriendsAndMessages();
+			}
+		});
+	}
+}

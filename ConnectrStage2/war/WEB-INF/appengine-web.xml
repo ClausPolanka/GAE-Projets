@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <application></application>
+  <version>1</version>
+  
+  <!-- Configure java.util.logging -->
+    <system-properties>
+    <!-- Configure java.util.logging -->
+      <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+      <property name="com.metadot.connectr.mins-feed-check" value="3" />
+      <property name="com.metadot.connectr.feedids-cache" value="FEEDIDS-CACHE" />
+
+    </system-properties>
+    
+    <admin-console>
+      <page name="feed update" url="/feedupdate?num=1&amp;max=100" />
+      <page name="enable receipt of xmpp news items" url="/xmpprequest?request=add" />
+      <page name="disable receipt of xmpp news items" url="/xmpprequest?request=remove" />
+    </admin-console>
+    
+  <inbound-services>
+    <service>xmpp_message</service>
+  </inbound-services>
+  
+  <sessions-enabled>true</sessions-enabled>
+  
+  <!-- Configure serving/caching of GWT files -->
+  <static-files>
+    <include path="**" />
+
+    <!-- The following line requires App Engine 1.3.2 SDK -->
+    <include path="**.nocache.*" expiration="0s" />
+
+    <include path="**.cache.*" expiration="365d" />
+    <exclude path="**.gwt.rpc" />
+  </static-files>
+  
+</appengine-web-app>

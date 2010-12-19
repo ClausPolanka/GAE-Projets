@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"   
+  id="WebApp_ID"
+  version="2.5">
+
+
+  <!-- ===================== stalkrUserService ===================== -->
+
+  <servlet>
+    <servlet-name>userAccountService</servlet-name>
+    <servlet-class>com.metadot.book.connectr.server.UserAccountServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>userAccountService</servlet-name>
+    <url-pattern>/connectr/userAccountService</url-pattern>
+  </servlet-mapping>
+
+  <!-- ===================== friendsService ===================== -->
+  <servlet>
+    <servlet-name>friendsService</servlet-name>
+    <servlet-class>com.metadot.book.connectr.server.FriendsServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>friendsService</servlet-name>
+    <url-pattern>/connectr/friendsService</url-pattern>
+  </servlet-mapping>
+
+  <!-- ===================== messagesService ===================== -->
+  <servlet>
+    <servlet-name>messagesService</servlet-name>
+    <servlet-class>com.metadot.book.connectr.server.MessagesServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>messagesService</servlet-name>
+    <url-pattern>/connectr/messagesService</url-pattern>
+  </servlet-mapping>
+
+
+
+  <!-- ===================== servlets and their security constraints ===================== -->
+
+  <servlet>
+    <servlet-name>FeedUpdateFriend</servlet-name>
+    <servlet-class>com.metadot.book.connectr.server.servlets.FeedUpdateFriendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FeedUpdateFriend</servlet-name>
+    <url-pattern>/feedupdatefr</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateFeedUrls</servlet-name>
+    <servlet-class>com.metadot.book.connectr.server.servlets.UpdateFeedUrlsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateFeedUrls</servlet-name>
+    <url-pattern>/updatefeedurls</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FeedUpdate</servlet-name>
+    <servlet-class>com.metadot.book.connectr.server.servlets.FeedUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FeedUpdate</servlet-name>
+    <url-pattern>/feedupdate</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FeedUpdateUser</servlet-name>
+    <servlet-class>com.metadot.book.connectr.server.servlets.FeedUpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FeedUpdateUser</servlet-name>
+    <url-pattern>/feedupdateuser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowUserFeeds</servlet-name>
+    <servlet-class>com.metadot.book.connectr.server.servlets.ShowUserFriendFeedsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowUserFeeds</servlet-name>
+    <url-pattern>/showuserfeeds</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>Migration</servlet-name>
+    <servlet-class>com.metadot.book.connectr.server.servlets.MigrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Migration</servlet-name>
+    <url-pattern>/migration</url-pattern>
+  </servlet-mapping>
+
+  <security-constraint>
+    <web-resource-collection>
+      <url-pattern>/feedupdatefr</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <url-pattern>/feedupdateuser</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+
+  <security-constraint>
+    <web-resource-collection>
+      <url-pattern>/feedupdate</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <url-pattern>/migration</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- the remote_api needs to be set up to support the bulk loading stuff. -->
+  <servlet>
+    <servlet-name>remoteapi</servlet-name>
+    <servlet-class>com.google.apphosting.utils.remoteapi.RemoteApiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>remoteapi</servlet-name>
+    <url-pattern>/remote_api</url-pattern>
+  </servlet-mapping>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>remoteapi</web-resource-name>
+      <url-pattern>/remote_api</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>ConnectrApp.html</welcome-file>
+  </welcome-file-list>
+
+
+</web-app>

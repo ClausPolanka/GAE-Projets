@@ -1,0 +1,113 @@
+body,table {
+  font-size: small;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+  background: blue;
+}
+
+.popup {
+  background: #eee;
+  padding: 0.5em;
+  width: 14em;
+  height: 2.5em;
+}
+
+.fullWidth {
+  width: 100%
+}
+
+.button {
+  float: right;
+}
+
+.addFriendBox {
+    float: right;
+    padding: 8px 4px;
+}
+
+.addFriendLink {
+  color: blue;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.alignTextRight {
+  text-align: right;
+  background-color: blue;
+  width: 100%;
+}
+
+.boxPadding {
+  margin: 11px 0 11px 11px;
+  xpadding: 11px;
+}
+
+.boxBorder {
+  border: 2px solid #5693d6;
+}
+
+.contentColumn {
+  margin: 10px 0 0 10px;
+  background-color: white;
+  border: 2px solid #5693d6;
+}
+
+.formTitle {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 15px 0;
+}
+
+.formButtons {
+  text-align: right;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e3e3e3;
+}
+
+.formContainer {
+  padding: 10px;
+}
+
+.help {
+  color: gray
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mainPanel {
+  width: 100%;
+  background-color: white;
+  border: 2px solid #5693d6;
+  height: 100%;
+}
+
+.footerPanel {
+  margin-left: 11px;
+  padding: 10px;
+  border-top: 2px solid #5693d6;
+  text-align: right;
+  }
+
+.messageList {
+  width: 100%;
+  padding: 10px;
+}
+
+.titleBar {
+  background-color: #5693d6;
+  color: white;
+  padding: 8px 4px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.outer {
+  background-color: #e1e1e1;
+}

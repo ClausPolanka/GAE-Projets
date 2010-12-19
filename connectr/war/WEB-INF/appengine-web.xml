@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+	<application>myconnectr</application>
+	<version>1</version>
+	
+	<system-properties>
+		<!-- Configure java.util.logging -->
+		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties" />
+		<property name="com.metadot.connectr.mins-feed-check" value="3" />
+		<property name="com.metadot.connectr.feedids-cache" value="FEEDIDS-CACHE" />
+		<property name="com.metadot.connectr.enable-channelapi" value="false" />
+
+    <!-- TODO: uncomment and edit the following settings with your information -->
+
+		<!-- <property name="fb_app_id" value="your_fb_app_id_here" />
+		<property name="fb_api_key" value="your_fb_api_key_here" />
+		<property name="fb_secret" value="your_fb_secret_here" />
+		<property name="fb_callback_url" value="http://your_appid.appspot.com/loginfacebook" />
+
+		<property name="twitter-consumer-key" value="your_twitter_consumer_key" />
+		<property name="twitter-consumer-secret" value="your_twitter_consumer_secret" /> -->
+		
+	</system-properties>
+
+	<admin-console>
+		<!-- <page name="feed update" url="/feedupdate?num=1&amp;max=100" />
+		<page name="enable receipt of xmpp news items" url="/xmpprequest?request=add" />
+		<page name="disable receipt of xmpp news items" url="/xmpprequest?request=remove" /> -->
+	</admin-console>
+
+	<inbound-services>
+		<service>xmpp_message</service>
+	</inbound-services>
+
+	<sessions-enabled>true</sessions-enabled>
+
+	<!-- Configure serving/caching of GWT files -->
+	<static-files>
+		<include path="**" />
+
+		<!-- The following line requires App Engine 1.3.2 SDK -->
+		<include path="**.nocache.*" expiration="0s" />
+
+		<include path="**.cache.*" expiration="365d" />
+		<exclude path="**.gwt.rpc" />
+	</static-files>
+
+</appengine-web-app>

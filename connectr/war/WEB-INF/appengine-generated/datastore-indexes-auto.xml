@@ -1,0 +1,17 @@
+<!-- Indices written at Sun, 19 Dec 2010 16:10:17 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="StreamItem" ancestor="false" source="auto">
+        <property name="ukeys" direction="asc"/>
+        <property name="date" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="StreamItem" ancestor="false" source="auto">
+        <property name="feedUrl" direction="asc"/>
+        <property name="date" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

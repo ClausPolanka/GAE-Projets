@@ -1,0 +1,47 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" >
+
+	<ui:style src="../resources/GlobalStyles.css" />
+		
+	<g:HTMLPanel>
+		<div class='{style.formContainer}'>
+			<div class="{style.formTitle}">Friend Information</div>
+			<table>
+				<tr>
+					<td>First name:</td>
+					<td>
+						<g:TextBox ui:field='firstNameField' />
+					</td>
+				</tr>
+				<tr>
+					<td>Last name:</td>
+					<td>
+						<g:TextBox ui:field='lastNameField' />
+					</td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td>
+						<g:TextBox ui:field='emailField' />
+					</td>
+				</tr>
+			</table>
+			<hr/>
+			<h3>URLs to watch</h3>
+			<g:TextBox width='420px' ui:field='url' />
+			<g:Button ui:field='addUrl'>+ add</g:Button>
+			<div class='{style.help}'>Enter a feed url. E.g.: http://blog.metadot.com/feeds/posts/default</div>
+			<g:Label ui:field='loadingLabel'></g:Label>
+			
+			<g:FlexTable ui:field='urlTable' />
+			
+			<div class='{style.formButtons}'>
+				<g:Button ui:field="cancelButton">cancel</g:Button>
+				<g:Button ui:field="saveButton">save</g:Button>
+			</div>
+			
+			
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

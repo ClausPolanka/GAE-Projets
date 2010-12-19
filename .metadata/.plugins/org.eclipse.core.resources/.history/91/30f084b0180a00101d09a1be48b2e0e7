@@ -1,0 +1,9 @@
+package sageniuz.client;
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+
+public interface UserAccountServiceAsync {
+
+	void login(String email, String password, AsyncCallback<UserAccountDTO> callback);
+
+}

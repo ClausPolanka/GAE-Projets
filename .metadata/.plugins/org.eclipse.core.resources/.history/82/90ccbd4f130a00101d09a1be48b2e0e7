@@ -1,0 +1,12 @@
+package sageniuz;
+
+import sageniuz.client.FriendList;
+
+public class Foo {
+
+	private FriendList frienList;
+	public Foo() {
+	}
+	public static void main(String[] args) {
+	}
+}

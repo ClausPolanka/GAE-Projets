@@ -1,0 +1,19 @@
+<queue-entries>
+  <queue>
+    <name>frfeedupdates</name>
+    <rate>3/s</rate>
+    <bucket-size>4</bucket-size>
+  </queue>
+  <queue>
+    <name>userfeedupdates</name>
+    <rate>7/s</rate>
+    <bucket-size>7</bucket-size>
+  </queue>
+  
+    <queue>
+    <name>default</name>
+    <rate>50/s</rate>
+  </queue>
+  
+  
+</queue-entries>

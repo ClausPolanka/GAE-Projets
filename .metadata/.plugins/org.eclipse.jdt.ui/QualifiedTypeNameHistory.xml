@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Composite"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Button"/>
+<fullyQualifiedTypeName name="com.google.gwt.dev.asm.Label"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Label"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.Window"/>
+<fullyQualifiedTypeName name="com.google.gwt.core.client.EntryPoint"/>
+<fullyQualifiedTypeName name="sageniuz.client.FriendList"/>
+<fullyQualifiedTypeName name="sageniuz.shared.UserAccountDTO"/>
+<fullyQualifiedTypeName name="sageniuz.shared.FriendDTO"/>
+<fullyQualifiedTypeName name="sageniuz.shared.FriendSummaryDTO"/>
+<fullyQualifiedTypeName name="sageniuz.server.domain.UserAccount"/>
+</qualifiedTypeNameHistroy>

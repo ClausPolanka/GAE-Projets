@@ -1,0 +1,7 @@
+package sageniuz.client;
+
+import com.google.gwt.user.client.ui.Composite;
+
+public class HeaderPanel  extends Composite 
+
+}

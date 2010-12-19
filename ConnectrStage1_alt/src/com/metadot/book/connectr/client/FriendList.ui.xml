@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+  xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+  <ui:style src="Resources/GlobalStyles.css" />
+    
+  <g:HTMLPanel width='100%'>
+    <div class='{style.contentColumn}'>
+      <div class='{style.addFriendBox}'>
+        <g:Hyperlink styleName='{style.addFriendLink}'
+          ui:field='addNew'>+new</g:Hyperlink>
+      </div>
+      <div class="{style.titleBar}">Friends</div>
+      <g:FlexTable ui:field='friendsTable' />
+    </div>
+  </g:HTMLPanel>
+</ui:UiBinder>

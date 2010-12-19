@@ -1,0 +1,10 @@
+package sageniuz.client;
+
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.metadot.book.connectr.shared.UserAccountDTO;
+
+public interface UserAccountServiceAsync {
+
+  void login(String email, String password, AsyncCallback<UserAccountDTO> callback);
+
+}

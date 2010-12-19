@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JavaRefs>
+<JavaRef class="com.google.gwt.eclipse.core.search.JsniJavaRefParamType" offset="1333" source="/connectr/src/com/metadot/book/connectr/client/channel/Channel.java">Ljava/lang/String;</JavaRef>
+<JavaRef class="com.google.gwt.eclipse.core.search.IndexedJsniJavaRef" offset="1265" source="/connectr/src/com/metadot/book/connectr/client/channel/Channel.java">@com.metadot.book.connectr.client.channel.SocketListener::onMessage(Ljava/lang/String;)</JavaRef>
+<JavaRef class="com.google.gwt.eclipse.core.search.IndexedJsniJavaRef" offset="1120" source="/connectr/src/com/metadot/book/connectr/client/channel/Channel.java">@com.metadot.book.connectr.client.channel.SocketListener::onOpen()</JavaRef>
+</JavaRefs>

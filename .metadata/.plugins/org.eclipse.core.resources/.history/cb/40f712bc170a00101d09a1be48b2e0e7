@@ -1,0 +1,15 @@
+package sageniuz.server;
+
+import sageniuz.client.UserAccountService;
+
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
+@SuppressWarnings("serial")
+public class UserAccountServiceImpl extends RemoteServiceServlet implements UserAccountService {
+
+	public UserAccountDTO login(String email, String password) {
+		AppMisc.populateDataStoreOnce();
+		return UserAccount.toDTO(UserAccount.getDefaultUser());
+	}
+
+}

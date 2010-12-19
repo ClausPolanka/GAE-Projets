@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+  xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:app='urn:import:com.metadot.book.connectr.client'
+  xmlns:connectr='urn:import:com.metadot.book.connectr.client'>
+
+  <ui:style src="Resources/GlobalStyles.css" />
+    
+  <g:DockLayoutPanel unit='EM' styleName='{style.outer}'>
+  
+    <g:north size='5'>
+      <app:HeaderPanel ui:field='headerPanel' />
+    </g:north>
+
+    <g:west size='14'>
+      <connectr:FriendList ui:field='friendList' />
+    </g:west>
+
+    <g:center>
+      <g:HTMLPanel styleName='{style.boxPadding}'>
+
+        <div class="{style.titleBar}">Latest Activity</div>
+        <g:ScrollPanel ui:field='mainPanel' styleName='{style.mainPanel}' />
+      </g:HTMLPanel>
+    </g:center>
+    
+    <g:south size="3">
+      <g:HTMLPanel styleName='{style.footerPanel}'>
+        <div>
+          <a href="#">Contact us</a>
+          |
+          <a href="#">Privacy</a>
+          |
+          <a href="#">About</a>
+        </div>
+      </g:HTMLPanel>
+    </g:south>
+
+  </g:DockLayoutPanel>
+
+</ui:UiBinder> 

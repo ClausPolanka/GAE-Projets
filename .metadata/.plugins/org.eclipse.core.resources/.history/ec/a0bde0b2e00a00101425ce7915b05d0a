@@ -1,0 +1,148 @@
+package com.metadot.book.connectr.server.domain;
+
+import javax.jdo.PersistenceManager;
+import javax.jdo.annotations.Extension;
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+import javax.jdo.listener.StoreCallback;
+
+import com.metadot.book.connectr.shared.FriendDTO;
+import com.metadot.book.connectr.shared.FriendSummaryDTO;
+
+@PersistenceCapable(identityType = IdentityType.APPLICATION, detachable = "true")
+public class Friend implements StoreCallback {
+
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	@Extension(vendorName = "datanucleus", key = "gae.encoded-pk", value = "true")
+	private String id;
+
+	@Persistent(serialized = "true")
+	private FriendDetails details;
+
+	// @formatter:off
+
+	@Persistent	private String firstName;
+	@Persistent private String lastName;
+	@Persistent	private String lcFirstName;
+	@Persistent	private String lcLastName;
+
+
+	// pointer back to userinfo object with which this friend is associated
+	@SuppressWarnings("unused")
+	@Persistent	private UserAccount userPrefs;
+
+	// @formatter:on
+	
+	public Friend() {
+		details = new FriendDetails();
+	}
+
+	public Friend(FriendDTO friendDTO) {
+		this();
+		this.setBasicInfo(friendDTO.getFirstName(), friendDTO.getLastName(), friendDTO.getEmailAddress());
+	}
+
+	public Friend(FriendDTO friendDTO, UserAccount user, PersistenceManager pm) {
+		this();
+		this.setBasicInfo(friendDTO.getFirstName(), friendDTO.getLastName(), friendDTO.getEmailAddress());
+		pm.makePersistent(this);
+		user.addFriendKey(this.id);
+		pm.makePersistent(user); // this will give us the newly-generated id
+	}
+
+	public void setBasicInfo(String firstName, String lastName, String emailAddress) {
+
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.setEmailAddress(emailAddress);
+	}
+
+	public FriendSummaryDTO toLightWeightDTO() {
+		return new FriendSummaryDTO(id, getFullName());
+	}
+
+	public FriendDTO toDTO() {
+		FriendDTO friendDTO = new FriendDTO(this.getFirstName(), this.getLastName(), this.getEmailAddress());
+		friendDTO.setId(this.getId());
+
+		return friendDTO;
+	}
+
+	/**
+	 * update existing friend object based on friend DTO id
+	 * 
+	 * @param friendDTO
+	 */
+	public void updateFromDTO(FriendDTO friendDTO) {
+
+		// trigger new save of serialized field
+		this.details = new FriendDetails();
+
+		this.firstName = friendDTO.getFirstName();
+		this.lastName = friendDTO.getLastName();
+		this.setEmailAddress(friendDTO.getEmailAddress());
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public FriendDetails getDetails() {
+		return details;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getFullName() {
+		return firstName + " " + lastName;
+	}
+
+	public String getLcFirstName() {
+		return lcFirstName;
+	}
+
+	public String getLcLastName() {
+		return lcLastName;
+	}
+
+	public String getEmailAddress() {
+		return details.getEmailAddress();
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		details.setEmailAddress(emailAddress);
+	}
+
+	@Override
+	public void jdoPreStore() {
+		if (getLastName() != null) {
+			lcLastName = getLastName().toLowerCase();
+		} else {
+			lcLastName = null;
+		}
+		if (getFirstName() != null) {
+			lcFirstName = getFirstName().toLowerCase();
+		} else {
+			lcFirstName = null;
+		}
+	}
+
+} // end class

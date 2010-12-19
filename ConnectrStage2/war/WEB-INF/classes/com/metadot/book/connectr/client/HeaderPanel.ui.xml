@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+  <ui:image field='logo' src='resources/logo_small.png' />
+
+  <ui:style>
+    @sprite .logo_small {
+      margin: 17px 0 0 10px;
+      gwt-image: 'logo';
+      position: absolute;
+    }
+    
+    .headerContainer {
+      padding: 0 11px;
+    }
+    
+    .welcomeDiv {
+      float: right;
+      margin-top: 5px; 
+      width: 200px;
+    }
+    
+    .tagLine {
+      margin-left: 180px;
+      padding-top: 22px;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+  </ui:style>
+
+  <g:HTMLPanel>
+
+    <div class='{style.headerContainer}'>
+      <div class='{style.logo_small}' />
+      <div>
+        <div class="{style.welcomeDiv}">
+          <b>Welcome back, foo@bar.com</b>
+        </div>
+        <div class='{style.tagLine}'>Your feeds are belong to us</div>
+      </div>
+    </div>
+  </g:HTMLPanel>
+</ui:UiBinder>

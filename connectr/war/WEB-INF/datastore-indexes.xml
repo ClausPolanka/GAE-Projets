@@ -1,0 +1,14 @@
+
+<datastore-indexes autoGenerate="true">
+
+    <datastore-index kind="StreamItem" ancestor="false" source="auto">
+        <property name="ukeys" direction="asc"/>
+        <property name="date" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="StreamItem" ancestor="false" source="auto">
+        <property name="feedUrl" direction="asc"/>
+        <property name="date" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

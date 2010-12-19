@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Dev\Programs\Java\SDK\JDK" version="1.6.0_21">
+<bootpath>
+<entry path="C:\Dev\Programs\Java\SDK\JDK\jre\lib\resources.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JDK\jre\lib\rt.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JDK\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JDK\jre\lib\jsse.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JDK\jre\lib\jce.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JDK\jre\lib\charsets.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JDK\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Dev\Programs\Java\SDK\JDK\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Dev\Programs\Java\SDK\JDK\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Dev\Programs\Java\SDK" version="1.6.0_21">
+<bootpath>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\resources.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\rt.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\sunrsasign.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\jsse.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\jce.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\charsets.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Dev\Programs\Java\SDK\JRE" version="1.6.0_21">
+<bootpath>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\resources.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\rt.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\sunrsasign.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\jsse.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\jce.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\charsets.jar"/>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Dev\Programs\Java\SDK\JRE\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

@@ -1,0 +1,62 @@
+package sageniuz.client;
+
+import java.util.List;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.CheckBox;
+import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.FlexTable;
+import com.google.gwt.user.client.ui.Image;
+import com.google.gwt.user.client.ui.Widget;
+import com.metadot.book.connectr.client.FriendList.ShowFriendPopupPanel;
+import com.metadot.book.connectr.client.Resources.GlobalResources;
+import com.metadot.book.connectr.shared.FriendSummaryDTO;
+
+public class FriendList extends Composite {
+
+	interface FriendListUiBinder extends UiBinder<Widget, FriendList> {
+	}
+
+	private static FriendListUiBinder uiBinder = GWT.create(FriendListUiBinder.class);
+
+	@UiField
+	protected FlexTable friendsTable;
+
+	public FriendList() {
+		initWidget(uiBinder.createAndBindUi(this));
+	}
+	
+	private void displayFriends() {
+
+		friendsTable.clear();
+	
+		for (int i = 0; i < 10; i++) {
+			CheckBox checkBoxName = new CheckBox("Name " + i
+					);
+		}
+		
+		int i = 0;
+		for (final FriendSummaryDTO friend : friends) {
+			CheckBox checkBoxName = new CheckBox(truncateLongName(friend.getDisplayName()));
+
+			final Image propertyImg = new Image(GlobalResources.RESOURCE.propertyButton());
+			propertyImg.setStyleName("pointer");
+			propertyImg.addClickHandler(new ShowFriendPopupPanel(friend, propertyImg));
+
+			friendsTable.setWidget(i, 0, checkBoxName);
+			friendsTable.setWidget(i, 1, propertyImg);
+			friendsTable.getCellFormatter().addStyleName(i, 0, "friendNameInList");
+			i++;
+		}
+	}
+
+	@UiHandler("addNew")
+	void onSignOutClicked(ClickEvent event) {
+		Window.alert("'Add New' clicked");
+	}
+}

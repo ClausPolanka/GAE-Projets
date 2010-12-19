@@ -1,0 +1,23 @@
+package sageniuz.client;
+
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.user.client.ui.DockLayoutPanel;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
+
+public class ConnectrApp implements EntryPoint {
+
+	interface ConnectrAppUiBinder extends UiBinder<DockLayoutPanel, ConnectrApp> {
+	}
+
+	private static final ConnectrAppUiBinder binder = GWT.create(ConnectrAppUiBinder.class);
+
+	@Override
+	public void onModuleLoad() {
+		System.out.println("Rock on");
+		DockLayoutPanel outer = binder.createAndBindUi(this);
+		RootLayoutPanel root = RootLayoutPanel.get();
+		root.add(outer);
+	}
+}

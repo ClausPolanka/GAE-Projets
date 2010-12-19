@@ -1,0 +1,140 @@
+package com.metadot.book.connectr.client;
+
+import java.util.List;
+
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.DockLayoutPanel;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
+import com.google.gwt.user.client.ui.ScrollPanel;
+import com.metadot.book.connectr.shared.MessageDTO;
+import com.metadot.book.connectr.shared.UserAccountDTO;
+
+public class ConnectrApp implements EntryPoint {
+
+	interface ConnectrAppUiBinder extends UiBinder<DockLayoutPanel, ConnectrApp> {
+	}
+
+	private static final ConnectrAppUiBinder binder = GWT.create(ConnectrAppUiBinder.class);
+	private static ConnectrApp singleton;
+
+	private final UserAccountServiceAsync userService = GWT.create(UserAccountService.class);
+	private final MessagesServiceAsync messagesService = GWT.create(MessagesService.class);
+
+	private UserAccountDTO currentUser;
+	private List<MessageDTO> messageDTOs;
+
+	// @formatter:off
+	@UiField HeaderPanel headerPanel;
+	@UiField ScrollPanel mainPanel;
+	@UiField FriendList friendList;
+	// @formatter:on
+
+	RootLayoutPanel root;
+
+	/** Gets the singleton application instance. */
+	public static ConnectrApp get() {
+		return singleton;
+	}
+
+	@Override
+	public void onModuleLoad() {
+		singleton = this;
+		DockLayoutPanel outer = binder.createAndBindUi(this);
+
+		root = RootLayoutPanel.get();
+		root.add(outer);
+
+		login();
+	}
+
+	void showEditFriend(String friendId) {
+		clearMainPanel();
+		mainPanel.add(new FriendEdit(friendId));
+	}
+
+	public void cancelEditFriend() {
+		clearMainPanel();
+		showMessages();
+	}
+
+	public void clearMainPanel() {
+		mainPanel.clear();
+	}
+
+	public void showMessages() {
+		mainPanel.clear();
+		mainPanel.add(new MessageListView(messageDTOs));
+	}
+
+	public void clearFriendsListPanel() {
+		// friendsPanel.clear();
+	}
+
+	public void showAddFriend() {
+		clearMainPanel();
+		mainPanel.add(new FriendEdit());
+	}
+
+	private void displayUserFriendsAndMessages() {
+		this.clearFriendsListPanel();
+		this.showFriendList();
+		this.getMessages();
+	}
+
+	private void getMessages() {
+		messagesService.getMessages(null, new AsyncCallback<List<MessageDTO>>() {
+			@Override
+			public void onFailure(Throwable caught) {
+				Window.alert("An error occurred");
+			}
+
+			@Override
+			public void onSuccess(List<MessageDTO> messageDTOs) {
+				setAndShowMessages(messageDTOs);
+
+			}
+		});
+	}
+
+	private void setMessages(List<MessageDTO> messageDTOs) {
+		this.messageDTOs = messageDTOs;
+	}
+
+	protected void setAndShowMessages(List<MessageDTO> messageDTOs) {
+		setMessages(messageDTOs);
+		showMessages();
+	}
+
+	private void login() {
+		userService.login("email", "password", new AsyncCallback<UserAccountDTO>() {
+			@Override
+			public void onFailure(Throwable caught) {
+				Window.alert("An error occurred");
+			}
+
+			@Override
+			public void onSuccess(UserAccountDTO result) {
+				currentUser = result;
+				displayUserFriendsAndMessages();
+			}
+		});
+	}
+
+	public void showFriendList() {
+		friendList.showFriends(currentUser);
+	}
+
+	public void setCurrentUser(UserAccountDTO currentUser) {
+		this.currentUser = currentUser;
+	}
+
+	public UserAccountDTO getCurrentUser() {
+		return currentUser;
+	}
+
+}

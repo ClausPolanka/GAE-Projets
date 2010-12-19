@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+  xmlns:g="urn:import:com.google.gwt.user.client.ui">
+  <ui:style src="Resources/GlobalStyles.css" />
+    
+  <g:HTMLPanel styleName='{style.popup}'>
+      <div  class='{style.button}'>
+      <g:Hyperlink  ui:field='edit' styleName='{style.link}'  >edit</g:Hyperlink>
+      <g:Hyperlink  ui:field='delete' styleName='{style.link}' >delete</g:Hyperlink>
+      </div>
+      <div ui:field='nameDiv' />
+  </g:HTMLPanel>
+
+</ui:UiBinder> 

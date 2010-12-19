@@ -1,0 +1,10 @@
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException, true, true, true, true, com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException/3936916533, 3936916533
+com.metadot.book.connectr.client.helper.PushService, false, false, false, false, _, 4276233488
+com.metadot.book.connectr.shared.messages.ChannelTextMessage, true, true, false, false, com.metadot.book.connectr.shared.messages.ChannelTextMessage/3761832609, 3761832609
+com.metadot.book.connectr.shared.messages.ContentAvailableMessage, true, true, false, false, com.metadot.book.connectr.shared.messages.ContentAvailableMessage/1440370564, 1440370564
+com.metadot.book.connectr.shared.messages.Message, true, false, false, false, com.metadot.book.connectr.shared.messages.Message/2904548483, 2904548483
+com.metadot.book.connectr.shared.messages.Message$Type, true, true, false, false, com.metadot.book.connectr.shared.messages.Message$Type/2839789797, 2839789797
+java.lang.Exception, true, false, true, false, java.lang.Exception/1920171873, 1920171873
+java.lang.RuntimeException, true, false, true, false, java.lang.RuntimeException/515124647, 515124647
+java.lang.String, true, true, true, true, java.lang.String/2004016611, 2004016611
+java.lang.Throwable, true, false, true, false, java.lang.Throwable/2953622131, 2953622131

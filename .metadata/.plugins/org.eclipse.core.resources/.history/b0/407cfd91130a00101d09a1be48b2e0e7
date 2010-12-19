@@ -1,0 +1,11 @@
+package sageniuz.client;
+
+public class Foo extends FriendList {
+
+	public Foo() {
+		friendList.friendsTable = null;
+	}
+
+	public static void main(String[] args) {
+	}
+}

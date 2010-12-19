@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/feedupdateloggedin</url>
+    <description>Update the feeds for active users; push notif. (when enabled) if new content</description>
+    <schedule>every 2 minutes</schedule>
+  </cron>
+  <cron>
+    <url>/feedupdate?num=1&amp;max=100</url>
+    <description>update the most recently requested feeds</description>
+    <schedule>every 10 minutes</schedule>
+  </cron>
+  <cron>
+    <url>/migration?migration=com.metadot.book.connectr.server.migrations.StreamItemPurge&amp;dir=down&amp;num=10&amp;hours=168</url>
+    <description>remove StreamItems older than a week</description>
+    <schedule>every 58 minutes</schedule>
+  </cron>
+</cronentries>

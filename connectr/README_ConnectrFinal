@@ -1,0 +1,47 @@
+
+This is an Eclipse project bundle for a Google App Engine and Google Web Toolkit (GAE+GWT) application.
+This app is 'ConnectrFinal'-- the full version of the Connectr app.
+
+This and the other applications in the download bundle accompany the book:
+ "Google App Engine Java and GWT Application Development" : 
+https://www.packtpub.com/google-app-engine-java-and-gwt-application-development/book ,
+by Daniel Guermeur and Amy Unruh
+
+The Connectr app is developed throughout the book, and this version is used from Chapter 8 through the rest of the book.
+
+Get started by reading the README file in the top-level directory of the code bundle you downloaded from Packt. It provides information about the Connectr example app, the software used, and the book and associated blog.
+
+See the README_Channel_API.txt file in this directory for information about enabling the App Engine Channel API for Connectr.
+
+The feedlist.txt file in this directory holds some example RSS and Atom feeds that you can use when adding data to Connectr.
+
+
+BLOG AND CONTACT INFORMATION 
+----------------------------
+
+The authors have a blog associated with this book : http://theconnectr.blogspot.com/ .
+Code updates and errata will be available from this blog, as well as through the Packt site from which you obtained this download. 
+The authors' contact information can be found on the blog as well.
+
+
+RUNNING CONNECTR'S CRON JOBS LOCALLY
+------------------------------------
+
+As described in the book, Connectr uses cron jobs to update feed data.
+The App Engine development environment does not automatically run an application's cron jobs.  You need to manually run them yourself in your local development environment.
+
+This request: 
+ http://127.0.0.1:8888/feedupdateloggedin
+will update the feeds for all logged in and active users 
+
+This request: 
+ http://127.0.0.1:8888/feedupdate?num=1&max=100
+will update the 100 most-recently-accessed feeds.
+
+The updates performed by these tasks will be reflected in Connectr's main panel.  If the Channel API is not enabled, you will need to click the 'Refresh' button to update the browser content.
+
+
+
+
+
+

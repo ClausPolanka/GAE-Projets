@@ -1,0 +1,12 @@
+html, body { background-color: white; margin: 0;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+
+.friendNameInList {
+	width: 100%;
+	white-space: no-wrap;
+}

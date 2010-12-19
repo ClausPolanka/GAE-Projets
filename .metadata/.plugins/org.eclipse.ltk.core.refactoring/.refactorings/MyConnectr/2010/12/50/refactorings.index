@@ -1,0 +1,15 @@
+1292607735693	Delete elements
+1292607775918	Delete element
+1292607784369	Delete element
+1292608029794	Rename package 'com.metadot.book.connectr.client.Resources'
+1292613892169	Move compilation unit
+1292613938515	Move compilation unit
+1292613962259	Move compilation unit
+1292614019419	Delete element
+1292614995759	Extract method 'addItemToList'
+1292615041331	Extract method 'imageProperty'
+1292615066528	Extract method 'checkBoxName'
+1292615131559	Rename local variable 'postfix'
+1292615170469	Extract constant 'FIRST_COLUMN'
+1292615183122	Extract constant 'SECOND_COLUMN'
+1292615260369	Extract constant 'PROPERTY_IMAGE_STYLE_NAME'

@@ -1,0 +1,16 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.window.quickAccess",1292523313089
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523317342
+activated,editor,com.google.gwt.eclipse.core,1.4.0.v201010280102,"com.google.gwt.eclipse.core.editors.gwtJavaEditor",1292523322097
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523322749
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.window.quickAccess",1292523322761
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523326312
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523330622
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523331737
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523332208
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523371938
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523373064
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.window.quickAccess",1292523373083
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523382414
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1292523382467
+started,bundle,org.eclipse.pde.core,3.6.1.v20100902_r361,"org.eclipse.pde.core",1292523387032

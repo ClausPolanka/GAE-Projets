@@ -1,0 +1,8 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<g:HTMLPanel width='100%'>
+			Refreshing in <g:Label ui:field='countdownLabel'>0</g:Label> sec.
+	</g:HTMLPanel>
+</ui:UiBinder> 

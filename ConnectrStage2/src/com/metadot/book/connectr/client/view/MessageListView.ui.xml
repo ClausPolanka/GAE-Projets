@@ -1,0 +1,23 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+  xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mvp="urn:import:com.metadot.book.connectr.client.view">
+  <ui:style src="../resources/GlobalStyles.css">
+    .refreshButton {
+      float: right;
+      width: 111px;
+      padding: 0 10px;
+    }
+    .header {
+      padding-top: 5px;
+    }
+  </ui:style>
+
+  <g:HTMLPanel width='100%'>
+    <div class='{style.header}'>
+    </div>
+    
+    <g:VerticalPanel styleName='{style.messageList}'
+      ui:field="messagesPanel" />
+  </g:HTMLPanel>
+
+</ui:UiBinder> 
