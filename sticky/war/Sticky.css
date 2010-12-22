@@ -109,12 +109,13 @@ body {
 /* notes */
 .note {
   font-size: 80%;
-  background-color: #fef49e;
+/*  background-color: #fef49e;*/
+  background-color: red;
   border: 1px solid #d0c98d;
   -webkit-box-shadow: -8px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .note-title {
-  margin: 5px 5px 0 5px;
+  margin: 5px 50px 0 5px;
   padding: 4px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;

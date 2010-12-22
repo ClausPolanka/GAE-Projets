@@ -1,21 +1,8 @@
-/* Copyright (c) 2009 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.google.appengine.demos.sticky.client;
 
 import com.google.appengine.demos.sticky.client.model.Model;
+import com.google.appengine.demos.sticky.client.model.Model.LoadObserver;
+import com.google.appengine.demos.sticky.client.model.Model.StatusObserver;
 import com.google.appengine.demos.sticky.client.model.RetryTimer;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
@@ -27,123 +14,118 @@ import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.UIObject;
 
-/**
- * The entry point for the Sticky application.
- *
- */
-public class Main extends RetryTimer implements EntryPoint, Model.LoadObserver,
-    Model.StatusObserver {
+public class Main extends RetryTimer implements EntryPoint, Model.LoadObserver, Model.StatusObserver {
 
-  /**
-   * An aggregated image bundle will auto-sprite all the images in the
-   * application.
-   */
-  public interface Images extends HeaderView.Images {
-  }
+	/**
+	 * An aggregated image bundle will auto-sprite all the images in the
+	 * application.
+	 */
+	public interface Images extends HeaderView.Images {
+	}
 
-  /**
-   * Provides Ui to notify the user of model based events. These include tasks
-   * (like loading a surface) and also errors (like lost communication to the
-   * server).
-   */
-  private static class StatusView extends SimplePanel {
-    private final DivElement taskStatusElement;
+	/**
+	 * Provides Ui to notify the user of model based events. These include tasks
+	 * (like loading a surface) and also errors (like lost communication to the
+	 * server).
+	 */
+	private static class StatusView extends SimplePanel {
+		private static final boolean NOT_VISIBLE = false;
+		private static final boolean VISIBLE = false;
+		private final DivElement taskStatusElement;
+		private final DivElement errorStatusElement;
 
-    private final DivElement errorStatusElement;
+		public StatusView() {
+			final Document document = Document.get();
+			final Element element = getElement();
+			taskStatusElement = element.appendChild(document.createDivElement());
+			errorStatusElement = element.appendChild(document.createDivElement());
+			errorStatusElement.setInnerText("No response from server");
 
-    public StatusView() {
-      final Document document = Document.get();
-      final Element element = getElement();
-      taskStatusElement = element.appendChild(document.createDivElement());
-      errorStatusElement = element.appendChild(document.createDivElement());
-      errorStatusElement.setInnerText("No response from server");
+			setStyleName("status-view");
+			taskStatusElement.setClassName("status-view-task");
+			errorStatusElement.setClassName("status-view-error");
 
-      setStyleName("status-view");
-      taskStatusElement.setClassName("status-view-task");
-      errorStatusElement.setClassName("status-view-error");
+			hideErrorStatus();
+			hideTaskStatus();
+		}
 
-      hideErrorStatus();
-      hideTaskStatus();
-    }
+		public void hideErrorStatus() {
+			UIObject.setVisible(errorStatusElement, NOT_VISIBLE);
+		}
 
-    /**
-     * Hides the Ui for server communication lost errors.
-     */
-    public void hideErrorStatus() {
-      UIObject.setVisible(errorStatusElement, false);
-    }
+		public void hideTaskStatus() {
+			UIObject.setVisible(taskStatusElement, NOT_VISIBLE);
+		}
 
-    /**
-     * Hides the task status Ui.
-     */
-    public void hideTaskStatus() {
-      UIObject.setVisible(taskStatusElement, false);
-    }
+		public void showErrorStatus() {
+			UIObject.setVisible(errorStatusElement, VISIBLE);
+		}
 
-    /**
-     * Displays the Ui for server communication lost errors.
-     */
-    public void showErrorStatus() {
-      UIObject.setVisible(errorStatusElement, true);
-    }
+		public void showTaskStatus(String text) {
+			taskStatusElement.setInnerText(text);
+			UIObject.setVisible(taskStatusElement, VISIBLE);
+		}
+	}
 
-    /**
-     * Displays the the Ui for a task status.
-     *
-     * @param text
-     *          the text to be displayed
-     */
-    public void showTaskStatus(String text) {
-      taskStatusElement.setInnerText(text);
-      UIObject.setVisible(taskStatusElement, true);
-    }
-  }
+	private final StatusView status = new StatusView();
+	private LoadObserver thisAsLoadObserverCallback = this;
+	private StatusObserver thisAsStatusObserverCallback = this;
 
-  private final StatusView status = new StatusView();
+	@Override
+	public void onModelLoaded(Model model) {
+		status.hideTaskStatus();
+		status.hideErrorStatus();
 
-  public void onModelLoaded(Model model) {
-    status.hideTaskStatus();
-    status.hideErrorStatus();
+		disableTopLevelScrollBar();
 
-    final Images images = GWT.create(Images.class);
+		final RootPanel root = RootPanel.get();
+		createHeaderViewFor(model, root);
+		root.add(new SurfaceView(model));
+	}
 
-    // We don't want any top-level scroll bars.
-    Window.enableScrolling(false);
+	private void disableTopLevelScrollBar() {
+		Window.enableScrolling(false);
+	}
 
-    final RootPanel root = RootPanel.get();
-    new HeaderView(images, root, model);
-    root.add(new SurfaceView(model));
-  }
+	private void createHeaderViewFor(Model model, final RootPanel parent) {
+		new HeaderView(GWT.<Images> create(Images.class), parent, model);
+	}
 
-  public void onModelLoadFailed() {
-    retryLater();
-    status.showErrorStatus();
-  }
+	@Override
+	public void onModelLoadFailed() {
+		retryLater();
+		status.showErrorStatus();
+	}
 
-  public void onModuleLoad() {
-    RootPanel.get().add(status);
-    status.showTaskStatus("Loading");
-    Model.load(this, this);
-  }
+	@Override
+	public void onModuleLoad() {
+		RootPanel.get().add(status);
+		status.showTaskStatus("Loading");
+		Model.load(thisAsLoadObserverCallback, thisAsStatusObserverCallback);
+	}
 
-  public void onServerCameBack() {
-    status.hideErrorStatus();
-  }
+	@Override
+	public void onServerCameBack() {
+		status.hideErrorStatus();
+	}
 
-  public void onServerWentAway() {
-    status.showErrorStatus();
-  }
+	@Override
+	public void onServerWentAway() {
+		status.showErrorStatus();
+	}
 
-  public void onTaskFinished() {
-    status.hideTaskStatus();
-  }
+	@Override
+	public void onTaskFinished() {
+		status.hideTaskStatus();
+	}
 
-  public void onTaskStarted(String description) {
-    status.showTaskStatus(description);
-  }
+	@Override
+	public void onTaskStarted(String description) {
+		status.showTaskStatus(description);
+	}
 
-  @Override
-  protected void retry() {
-    Model.load(this, this);
-  }
+	@Override
+	protected void retry() {
+		Model.load(thisAsLoadObserverCallback, thisAsStatusObserverCallback);
+	}
 }
