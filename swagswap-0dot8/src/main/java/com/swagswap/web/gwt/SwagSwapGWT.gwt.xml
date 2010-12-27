@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 1.7.1//EN" "http://google-web-toolkit.googlecode.com/svn/tags/1.7.1/distro-source/core/src/gwt-module.dtd">
+<module rename-to='swagswap'>
+
+	<!-- Inherit the core Web Toolkit stuff.                        -->
+	<inherits name='com.google.gwt.user.User' />
+
+	<!-- Inherit the default GWT style sheet.  You can change       -->
+	<!-- the theme of your GWT application by uncommenting          -->
+	<!-- any one of the following lines.                            -->
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	<!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+	<!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+	<!-- Other module inherits                                      -->
+	<inherits name='com.swagswap.Domain' />
+	
+	<!-- smartgwt -->
+	<inherits name="com.smartgwt.SmartGwt"/>
+	<!--  for this problem http://forums.smartclient.com/showthread.php?t=7793 -->
+	<inherits name="com.smartgwt.tools.SmartGwtTools"/>
+	
+	<inherits name="com.smartclient.theme.enterprise.EnterpriseResources"/>
+	
+	<!-- Specify the app entry point class.                         -->
+	<!-- <entry-point class='com.swagswap.web.gwt.client.SwagSwapGWT' /> -->
+	<entry-point class='com.swagswap.web.gwt.client.SwagSwapGWT' />
+
+	<!-- Specify the paths for translatable code                    -->
+	<source path='client' />
+
+</module>

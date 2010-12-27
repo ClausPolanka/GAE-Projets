@@ -1,0 +1,313 @@
+<!-- This is inspired by http://googleappengine.googlecode.com/svn/trunk/java/demos/new_project_template/build.xml -->
+
+<project name="swagswap" default="war">
+
+	<!-- Try reading GAE_HOME env var first-->
+
+	<property environment="env" />
+
+	<property name="appengine.sdk" value="${env.GAE_HOME}" />
+
+	<!-- GWT-->
+	<property name="gwt.sdk" value="${env.GWT_HOME}" />
+
+	<!-- SWT on Mac requires the -XstartOFirstThreadFlag. -->
+	<condition property="XstartOnFirstThreadFlag" value="-XstartOnFirstThread" else="-Dgwt.dummy.arg1=">
+		<os family="mac" />
+	</condition>
+
+	<!-- SWT on Mac requires the -d32 flag if the VM is 64-bit. -->
+	<condition property="d32Flag" value="-d32" else="-Dgwt.dummy.arg2=">
+		<and>
+			<os family="mac" />
+			<equals arg1="${sun.arch.data.model}" arg2="64" />
+		</and>
+	</condition>
+
+	<!--end GWT-->
+
+	<!-- Check that the SDK value is set and seems sane, so we can give a nicer
+		error if not.  -->
+	<fail message="Please define the GAE_HOME env variable to point to your SDK directory">
+		<condition>
+			<not>
+				<and>
+					<isset property="appengine.sdk" />
+					<available file="${appengine.sdk}/config/user/ant-macros.xml" />
+				</and>
+			</not>
+		</condition>
+	</fail>
+
+	<!-- Pick up the Ant macros and taskdefs for App Engine -->
+	<import file="${appengine.sdk}/config/user/ant-macros.xml" />
+
+
+	<!-- Remote debug port for dev_appserver -->
+	<property name="debug.port" value="5005" />
+
+	<!-- HTTP port for dev_appserver -->
+	<property name="http.port" value="8080" />
+
+	<!-- Name of log file to write logs to -->
+	<property name="log.file" value="app.log" />
+
+	<!-- Number of days worth of logs to retrieve -->
+	<property name="log.days" value="2" />
+
+	<property name="war.dir" location="target/${ant.project.name}" />
+
+	<target name="war" depends="compile,copyResources" description="Assemble the application directory">
+		<mkdir dir="${war.dir}/WEB-INF/lib" />
+		<copy todir="${war.dir}/WEB-INF/lib" flatten="true">
+			<fileset dir="${appengine.sdk}/lib/user">
+				<include name="**/*.jar" />
+			</fileset>
+		</copy>
+		<enhance_war war="${war.dir}" />
+	</target>
+	
+	<target name="dist" depends="compile,copyResources" description="create src distribution">
+		  <zip destfile="target/${ant.project.name}.zip"
+		       basedir="."
+		       excludes="target/, **/.svn/, **/.DS_Store"
+		  />
+	</target>
+
+	<target name="copyResources" description="copy static webapp resources to target">
+		<copy todir="${war.dir}">
+			<fileset dir="src/main/webapp">
+				<exclude name="**/.svn/**" />
+				<exclude name="**/*~" />
+			</fileset>
+		</copy>
+	</target>
+
+
+	<path id="classpath">
+		<fileset dir="${appengine.sdk}/lib/user">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${appengine.sdk}/lib/shared">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="src/main/webapp/WEB-INF/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="tools.class.path">
+		<pathelement location="${appengine.sdk}/lib/appengine-tools-api.jar" />
+	</path>
+
+
+	<path id="gwt.classpath">
+		<pathelement location="src/main/java" />
+		<pathelement location="${war.dir}/WEB-INF/classes" />
+		<pathelement location="${gwt.sdk}/gwt-user.jar" />
+		<fileset dir="${gwt.sdk}" includes="gwt-dev*.jar" />
+	</path>
+
+	<target name="compile" description="Compile the application servlet code">
+		<mkdir dir="${war.dir}/WEB-INF/classes" />
+		<javac srcdir="src/main/java" destdir="${war.dir}/WEB-INF/classes"
+			source="1.5" target="1.5" nowarn="true" debug="true" 
+			debuglevel="lines,vars,source">
+			<classpath refid="classpath"/>
+			<classpath refid="gwt.classpath"/>
+			<compilerarg value="-Xlint" />
+		</javac>
+		<!--for GWT xml file-->
+		<copy todir="${war.dir}/WEB-INF/classes">
+			<fileset dir="src/main/java/">
+				<include name="**/*.gwt.xml"/>
+			</fileset>
+		</copy>
+		<!--for JSF message resources -->
+		<copy todir="${war.dir}/WEB-INF/classes">
+			<fileset dir="src/main/java/">
+				<include name="**/*.properties"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="clean" description="Force a clean slate to rebuild">
+		<delete dir="target" />
+	</target>
+
+	<target name="server_run" depends="war" description="Run the dev_appserver">
+		<dev_appserver war="${war.dir}" port="${http.port}"  >
+	      <options>
+	        <arg value="--disable_update_check"/>
+	      </options>
+		</dev_appserver>
+
+	</target>
+
+	<!--dev server doesn't stop when you kill the runserver ant task on windows so
+		I borrowed this http://byteco.de/2009/04/30/killing-java-process-from-ant-in-windows/ -->
+	<target name="server_stop(windows)">
+		<exec executable="${env.JAVA_HOME}/bin/jps" output="pid.out.file" />
+		<loadfile srcfile="pid.out.file" property="pid.out">
+			<filterchain>
+				<linecontains>
+					<contains value="DevAppServerMain" />
+				</linecontains>
+				<tokenfilter>
+					<deletecharacters chars="DevAppServerMain" />
+					<trim />
+					<ignoreblank />
+				</tokenfilter>
+				<striplinebreaks />
+			</filterchain>
+		</loadfile>
+		<echo>
+			Killing appengine java process with PID - "${pid.out}"
+		</echo>
+		<exec executable="tools/pskill">
+			<arg value="${pid.out}" />
+		</exec>
+		<delete file="pid.out.file" />
+	</target>
+
+	<target name="server_debug" depends="war" description="Launches dev_appserver with remote debugging enabled">
+		<echo message="Launching dev_appserver on Web port ${http.port}, Java remote debug port ${debug.port}" />
+		<dev_appserver war="${war.dir}" port="${http.port}">
+			<options>
+				<arg value="--jvm_flag=-Xdebug" />
+				<arg value="--jvm_flag=-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=${debug.port}" />
+			</options>
+		</dev_appserver>
+	</target>
+
+	<target name="update" depends="war" description="Uploads the application, including indexes.  Note 
+		you should run gwtc seperately first since it's not included in war task">
+		<appcfg action="update" war="${war.dir}" />
+	</target>
+
+	<target name="update_indexes" depends="war" description="Uploads only the application's indexes">
+		<appcfg action="update_indexes" war="${war.dir}" />
+	</target>
+
+	<target name="rollback" depends="war" description="Rolls back any in-progress application update">
+		<appcfg action="rollback" war="${war.dir}" />
+	</target>
+
+	<target name="request_logs" description="Downloads the application's logs">
+		<appcfg action="request_logs" war="${war.dir}">
+			<options>
+				<arg value="--num_days=${log.days}" />
+			</options>
+			<args>
+				<arg value="${log.file}" />
+			</args>
+		</appcfg>
+	</target>
+
+	<!--GWT-->
+	<target name="gwtc" depends="compile,copyResources" description="GWT compile to JavaScript">
+		<java failonerror="true" fork="true" classname="com.google.gwt.dev.Compiler">
+			<classpath>
+				<path refid="classpath" />
+				<path refid="gwt.classpath" />
+			</classpath>
+			<!-- add jvmarg -Xss16M or similar if you see a StackOverflowError -->
+			<jvmarg value="-Xmx320M" />
+			<arg value="com.swagswap.web.gwt.SwagSwapGWT" />
+			<!--output to target dir-->
+			<arg value="-war" />
+			<arg file="${war.dir}" />
+			<!--<arg value="-logLevel DEBUG" />-->
+		</java>
+		<!--zip smartGWT dir (see http://forums.smartclient.com/showthread.php?t=5258)-->
+		<zip destfile="${war.dir}/sc.zip" basedir="${war.dir}/swagswap/" includes="sc/**"/>
+		<delete dir="${war.dir}/swagswap/sc" />
+	</target>
+
+	<target name="gwt_hosted" depends="compile, copyResources" description="Run hosted mode">
+		<echo>Running GWT Hosted Mode pointing to GAE</echo>
+		<java failonerror="true" fork="true" classname="com.google.gwt.dev.HostedMode">
+			<classpath>
+				<path refid="classpath" />
+				<path refid="gwt.classpath" />
+				<path refid="tools.class.path" />
+			</classpath>
+			<!--for mac-->
+			<jvmarg value="${XstartOnFirstThreadFlag}" />
+			<jvmarg value="${d32Flag}" />
+			
+			<jvmarg value="-Xmx256M" />
+			<!--use appengine server-->
+			<arg value="-noserver" />
+			<arg value="-startupUrl" />
+			<arg value="http://localhost:8080/SwagSwapGWT.html" />
+			<arg value="com.swagswap.web.gwt.SwagSwapGWT" />
+			<arg value="-war" />
+			<arg file="${war.dir}" />
+		</java>
+	</target>
+
+	<target name="gwt_hosted_debug" depends="compile, copyResources" description="Run hosted mode">
+		<echo>Running GWT Hosted Mode pointing to GAE</echo>
+		<java failonerror="true" fork="true" classname="com.google.gwt.dev.HostedMode">
+			<classpath>
+				<path refid="classpath" />
+				<path refid="gwt.classpath" />
+				<path refid="tools.class.path" />
+			</classpath>
+			<!--for mac-->
+			<jvmarg value="${XstartOnFirstThreadFlag}" />
+			<jvmarg value="${d32Flag}" />
+			<jvmarg value="-Xdebug -Xnoagent -Djava.compiler=NONE" />
+			<jvmarg value="-Xrunjdwp:transport=dt_socket,server=y,address=5006,suspend=y" />
+			<jvmarg value="-Xmx256M" />
+			<!--use appengine server-->
+			<arg value="-noserver" />
+			<arg value="-startupUrl" />
+			<arg value="http://localhost:8080/SwagSwapGWT.html" />
+			<arg value="com.swagswap.web.gwt.SwagSwapGWT" />
+			<arg value="-war" />
+			<arg file="${war.dir}" />
+		</java>
+	</target>
+
+	<!--end GWT-->
+
+	<path id="test.classpath">
+		<path refid="classpath" />
+		<path refid="gwt.classpath" />
+		<pathelement location="${appengine.sdk}/lib/impl/appengine-api-stubs.jar" />
+		<pathelement location="${appengine.sdk}/lib/impl/appengine-local-runtime.jar" />
+		<fileset dir="src/test/lib">
+			<include name="*.jar" />
+		</fileset>
+		<pathelement location="${war.dir}/WEB-INF/classes" />
+		<pathelement location="src/test/resources" />
+	</path>
+
+	<target name="compile-tests" depends="war">
+		<mkdir dir="target/test" />
+		<javac srcdir="src/test/java" destdir="target/test" debug="true" classpathref="test.classpath">
+			<compilerarg value="-Xlint" />
+		</javac>
+	</target>
+
+	<target name="runtests" depends="compile-tests">
+		<mkdir dir="target/test-reports" />
+		<junit printsummary="true" failureproperty="junit.failure" >
+			<classpath>
+				<path refid="test.classpath" />
+				<pathelement location="target/test" />
+			</classpath>
+
+			<formatter type="plain" usefile="false" />
+			
+			<batchtest fork="yes" todir="target/test-reports">
+				<fileset dir="src/test/java">
+					<include name="**/*Test.java" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+
+</project>

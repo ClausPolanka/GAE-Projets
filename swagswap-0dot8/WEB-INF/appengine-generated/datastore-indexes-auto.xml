@@ -1,0 +1,10 @@
+<!-- Indices written at Tue, 17 Nov 2009 08:42:11 CET -->
+
+<datastore-indexes>
+
+    <!-- Used 4 times in query history -->
+    <datastore-index kind="SwagItemComment" ancestor="true" source="auto">
+        <property name="comments_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>

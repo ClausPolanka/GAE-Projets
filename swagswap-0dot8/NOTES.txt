@@ -1,0 +1,24 @@
+Things to note:
+
+Owned One-to-One Relationships
+http://code.google.com/appengine/docs/java/datastore/relationships.html#Owned_One_to_One_Relationships
+child item is lazy loaded
+child item is not deleted when parent is
+child key includes parent key
+Parent and child are in the same entity group so can be updated in the same transaction
+
+See SwagItem (parent) to SwagImage
+
+
+Image upload - byte[] limited, have to use Blob
+
+TextAreas have to be stored in com.google.appengine.api.datastore.Text or you'll get:
+** Root cause is: description: String properties must be 500 characters or less. Instead, use com.google.appengine.api.datastore.Text, which can store strings of any length. java.lang.IllegalArgumentException: description: String properties must be 500 characters or less. Instead, use com.google.appengine.api.datastore.Text, which can store strings of any length.
+
+
+org.datanucleus.store.appengine.query.DatastoreQuery$UnsupportedDatastoreOperatorException: Problem with query <SELECT FROM com.swagswap.domain.SwagItem WHERE name=='name' || tags=='name' PARAMETERS String searchString>: App Engine datastore does not support operator  OR 
+
+No way to do case insensitive queries
+http://groups.google.com/group/google-appengine-java/browse_thread/thread/8f3b9bf6ac7ebe47/b1210eca3ca54a57?lnk=gst&q=case+insensitive#b1210eca3ca54a57
+
+If appcfg.cmd can't find your java edit it and change java.home to point to the full path of your java exe
